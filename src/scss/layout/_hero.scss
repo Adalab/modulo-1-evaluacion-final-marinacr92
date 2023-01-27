@@ -1,22 +1,15 @@
 .hero{
     color: $white;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    &__img{
-        width: 100%;
-        height: 528.8px;
-        object-fit: cover;
-        position: fixed;
-        top:0;
-        z-index: -1;
-    }
-    
-    &__text{
-        height: 100%;
-        margin-top: 315px;
-    }
+    justify-content: flex-end;
+    background-image: url("../../assets/images/cover_small.jpg");
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 30px;
+        
     &__title{
         font-family: $RobotoSlab;
         text-transform: uppercase;
@@ -34,19 +27,22 @@
         margin-bottom: 15px;
     }
 
-    
+    &__button{
+        width: 36px;
+        height: 36px;
+        background-color: $white;
+        border-radius: 50%;
+        border: none;
+        padding: 13px 0;
+     
+        &-img {
+          width: 18px;
+        }
+    }    
 }
-.button_scroll_down{
-    width:36px;
-    height:36px;
-    background-color: $white;
-    border-radius: 50%;
-    border: 1px solid $white;
-    padding: 12px 0;
-    display: inline-block;
 
     
-    &__img{
-        width: 18px;
-    }
-}
+
+    
+    
+
