@@ -1,2 +1,14 @@
 .footer {
 }
+.main__button__arrow {
+    width: 45px;
+    height: 45px;
+    background-color: $white;
+    border-radius: 50%;
+    border: none;
+    padding: 13px 0;
+
+    &-img {
+        width: 21px;
+    }
+}

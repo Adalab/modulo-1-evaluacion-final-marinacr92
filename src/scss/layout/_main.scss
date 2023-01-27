@@ -10,8 +10,6 @@
 
         &-text{
             color: $bright-orange;
-            font-family: $Roboto;
-            font-weight: 400;
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
@@ -20,16 +18,22 @@
     }
 }
 
-.title__orange{
-    color: $bright-orange;
+.title{
+    font-family: $RobotoSlab;
+}
+
+.desc{
     font-family: $Roboto;
     font-weight: 400;
+}
+
+.title__orange{
+    color: $bright-orange;
     font-size: 1.4rem;
     line-height: 2.14;
 }
 
 .white__article-title{
-    font-family: $RobotoSlab;
     font-size: 2.4rem;
     line-height: 1.25;
     padding-bottom: 11px;
@@ -37,9 +41,62 @@
 
 .white__article-description {
     color: $greyish-brown;
-    font-family: $Roboto;
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
     padding-bottom: 15px;
 }
+
+.main__grey{
+    background-color: $white-grey;
+    padding: 29px 50px 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    &-title{
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+    
+    }
+
+    &-button{
+        width: 184px;
+        height: 45px;
+        background-color: $bright-orange;
+        border: none;
+        border-radius: 25px;
+        
+        &-text {
+            color: $white;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: none;
+            }
+    }
+}
+
+.grey__ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 140px 140px;
+    align-items: center;
+    padding: 0 10px;
+
+
+    &__title{
+        font-size: 1.8rem;
+        line-height: 1.67;
+        text-align: center;
+    }
+    
+    &__description{
+        font-size: 1.8rem;
+        line-height: 1.67;
+        text-align: center;
+    }
+}
+
+
