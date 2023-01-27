@@ -1,2 +1,21 @@
 .header {
+    height: 35px;
+    width: 38px;
+    background-color: $bright-orange;
+    position: sticky;
+    z-index: 2;
+    
+    
 }
+
+.menu{
+    width: 100%;
+    text-align: center;
+
+    &__icon{
+        width: 13.5px;  
+
+        
+    }
+}
+
