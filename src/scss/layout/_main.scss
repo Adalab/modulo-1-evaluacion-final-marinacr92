@@ -1,7 +1,45 @@
-.main{
-    width: 320px;
-}
-.article{
-    width: 100%;
+.main__white{
+    padding: 34px 15px 40px 15px;
 
+    &-button{
+        width: 160px;
+        height: 45px;
+        background-color: white;
+        border: 2px solid $bright-orange;
+        border-radius: 25px;
+
+        &-text{
+            color: $bright-orange;
+            font-family: $Roboto;
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.title__orange{
+    color: $bright-orange;
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.14;
+}
+
+.white__article-title{
+    font-family: $RobotoSlab;
+    font-size: 2.4rem;
+    line-height: 1.25;
+    padding-bottom: 11px;
+}
+
+.white__article-description {
+    color: $greyish-brown;
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    padding-bottom: 15px;
 }
