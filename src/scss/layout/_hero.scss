@@ -1,5 +1,6 @@
 .hero{
     color: $white;
+    width: 100vw;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     background-image: url("../../assets/images/cover_small.jpg");
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
     padding-bottom: 30px;
         
     &__title{
@@ -41,7 +43,58 @@
     }    
 }
 
+
+@media all and (min-width:768px){
+    .hero {
+        height: 768px;
+        background-position: left;
+       
+        background-repeat: no-repeat;
+        padding-bottom: 45px;
     
+        &__title {
+            font-size: 7.5rem;
+            line-height: 1.33;
+        }
+    
+        &__description {
+            font-size: 2.4rem;
+            padding: 0 205px;
+            }
+    
+        &__button {
+            width: 45px;
+            height: 45px;
+            padding: 17px 0;
+    
+            &-img {
+                width: 19px;
+            }
+        }
+    }
+}
+
+@media all and (min-width:1200px) {
+    .hero {
+        height: 800px;
+        background-position: left -221px bottom 0px;
+        background-size: 128%;
+
+        &__title {
+            font-size: 10rem;
+        }
+
+        &__button {
+            width: 46px;
+            height: 46px;
+            padding: 19px 0;
+
+            &-img {
+                width: 20px;
+            }
+        }
+    }
+}
 
     
     
