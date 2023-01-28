@@ -51,3 +51,43 @@
     color: $bright-orange;
     }
 }
+
+@media all and (min-width: 768px) {
+    .footer {
+        padding: 56px 150px 34px 150px; 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        &__ul{
+            text-align: left;
+            padding-bottom: 0px;
+        }
+    }
+
+    .link-page{
+        order: 2;
+    }
+
+    .socials{
+        order: 3;
+    }
+
+    .copy {
+        padding: 0;
+        text-align: left;
+        order: 1;
+    
+
+        &__text {
+            display: block;
+        }
+    }
+}
+
+
+@media all and (min-width: 1200px){
+    .footer {
+        padding: 50px 320px 40px 320px; 
+    }
+}
