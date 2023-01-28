@@ -1,14 +1,53 @@
 .footer {
-}
-.main__button__arrow {
+    background-color: $greyish-brown;
+    padding: 65px 115px 40px 115px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    &__button__arrow {
     width: 45px;
     height: 45px;
     background-color: $white;
     border-radius: 50%;
     border: none;
     padding: 13px 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
 
-    &-img {
-        width: 21px;
+        &-img {
+            width: 21px;
+        }
+    }
+
+    &__style {
+        color: $white;
+        font-family: $Roboto;
+        font-weight: 400;
+    }
+
+    &__ul{
+        text-align: center;
+        padding-bottom: 30px;
+
+        &-link{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            line-height: 1.88;
+        }
+    }
+}
+
+.copy {
+    padding: 0 12px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.14;
+
+    &__heart{
+    color: $bright-orange;
     }
 }
