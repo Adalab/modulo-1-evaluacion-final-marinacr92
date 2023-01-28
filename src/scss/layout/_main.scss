@@ -2,6 +2,15 @@
     scroll-margin-top: 20px;
 }
 
+.title-font {
+    font-family: $RobotoSlab;
+}
+
+.font {
+    font-family: $Roboto;
+    font-weight: 400;
+}
+
 .main__white{
     padding: 34px 15px 40px 15px;
 
@@ -14,21 +23,13 @@
 
         &-text{
             color: $bright-orange;
+            font-family: $Roboto;
+            font-weight: 500;
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
         }
-
     }
-}
-
-.title{
-    font-family: $RobotoSlab;
-}
-
-.desc{
-    font-family: $Roboto;
-    font-weight: 400;
 }
 
 .title__orange{
@@ -48,6 +49,86 @@
     font-size: 1.8rem;
     line-height: 1.67;
     padding-bottom: 15px;
+}
+
+.main__grey{
+    background-color: $white-grey;
+    padding: 29px 50px 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 375px 60px;
+    align-items: center;
+    justify-items: center;
+
+    &-title{
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &-button{
+        width: 184px;
+        height: 45px;
+        background-color: $bright-orange;
+        border: none;
+        border-radius: 25px;
+        
+        &-text {
+            color: $white;
+            font-family: $Roboto;
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
+
+.grey__ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 125px 125px;
+    align-items: center;
+    padding: 0 10px;
+
+
+    &__title{
+        font-size: 1.8rem;
+        line-height: 1.67;
+        text-align: center;
+    }
+    
+    &__description{
+        font-size: 1.8rem;
+        line-height: 1.67;
+        text-align: center;
+    }
+}
+
+
+@media all and (min-width:768px){
+    #grey{
+    scroll-margin-top: 40px;
+}
+
+.main__white{
+    padding: 40px 40px 61px 40px;
+}
+
+.title__orange{
+    font-size: 1.6rem;
+    line-height: 1.88;
+}
+
+.white__article-title{
+    font-size: 3.2rem;
+    line-height: 1.41;
+}
+
+.white__article-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 21px;
 }
 
 .main__grey{
@@ -102,5 +183,4 @@
         text-align: center;
     }
 }
-
-
+}
