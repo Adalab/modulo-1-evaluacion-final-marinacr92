@@ -1,0 +1,10 @@
+@keyframes rotateAndBorder {
+    from {
+        border: 2px solid $white;
+    }
+
+    to {
+        border-color: $bright-orange;
+        transform: rotate(360deg);
+    }
+}

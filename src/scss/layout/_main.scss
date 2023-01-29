@@ -32,46 +32,35 @@
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
+        }
 
-            &:hover {
-                color: $white;
-            }
+        &:hover &-text {
+            color: $white;
         }
     }
 }
 
 .orange__bubble {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: $bright-orange;
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    bottom: 0;
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
+    @include bubbleEffect($bright-orange);
 }
 
 .main__white-button:hover .orange__bubble {
     transform: translateY(0) scale(2);
 }
 
-.bubble1 {
-    --n: 1;
+.white__bubble {
+    @include bubbleEffect($white);
 }
 
-.bubble2 {
-    --n: 2;
+.main__grey-button:hover .white__bubble {
+    transform: translateY(0) scale(2);
 }
 
-.bubble3 {
-    --n: 3;
-}
-
-.bubble4 {
-    --n: 4;
+.bubble {
+    &1 { --n: 1 }
+    &2 { --n: 2 }
+    &3 { --n: 3 }
+    &4 { --n: 4 }
 }
 
 .title__orange{
@@ -125,30 +114,12 @@
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
+        }
 
-            &:hover {
-                color: $bright-orange;
-            }
+        &:hover &-text{
+            color: $bright-orange;
         }
     }
-}
-
-.white__bubble {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: $white;
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    bottom: 0;
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
-}
-
-.main__grey-button:hover .white__bubble {
-    transform: translateY(0) scale(2);
 }
 
 .grey__ul{
@@ -173,7 +144,7 @@
 }
 
 
-@media all and (min-width:768px){
+@media all and (min-width: $breakpoint-tablet){
     #grey{
     scroll-margin-top: 40px;
     }
@@ -237,7 +208,7 @@
 }
 
 
-@media all and (min-width:1200px) {
+@media all and (min-width: $breakpoint-desktop) {
    .main__white{
         padding: 60px 100px 70px 255px;
     }

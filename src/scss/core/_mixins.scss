@@ -1,16 +1,13 @@
-// la función acepta un número de pixels (los que vayamos a usar). Y nos devuelve el cálculo en unidades `rem` :)
-@function rem($pixels) {
-  @return ($pixels / $defaultFontSize * 1rem);
-}
-
-@mixin tablet() {
-  @media all and (min-width: $breakpoint-tablet) {
-    @content;
-  }
-}
-
-@mixin desktop() {
-  @media all and (min-width: $breakpoint-desktop) {
-    @content;
-  }
+@mixin bubbleEffect($backgroundColor) {
+  background-color: $backgroundColor;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  bottom: 0;
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }

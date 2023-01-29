@@ -12,7 +12,7 @@
 }
 
 
-@media all and (min-width: 768px){
+@media all and (min-width: $breakpoint-tablet){
     .header{
         padding: 15px 13.2px;
 
@@ -23,7 +23,7 @@
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: $breakpoint-desktop) {
     .header {
         padding: 15.3px 14.4px;
 

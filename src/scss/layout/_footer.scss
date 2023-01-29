@@ -7,18 +7,24 @@
     position: relative;
     
     &__button__arrow {
-    width: 45px;
-    height: 45px;
     background-color: $white;
-    border-radius: 50%;
-    border: none;
-    padding: 13px 0;
+    border-radius: 50px;
+    border: 2px solid $white;
+    padding: 11px 11.5px 9px 11.5px;
     position: absolute;
     top: 0;
-    transform: translateY(-50%);
+    margin-top: -20.5px;
 
         &-img {
-            width: 21px;
+            width: 22px;
+            height: 22px;
+            color: $bright-orange
+        }
+
+        &:hover{
+            animation-duration: 1s;
+            animation-name: rotateAndBorder;
+            border-color: $bright-orange;
         }
     }
 
@@ -55,7 +61,7 @@
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $breakpoint-tablet) {
     .footer {
         padding: 56px 150px 34px 150px; 
         flex-direction: row;
@@ -84,7 +90,7 @@
 }
 
 
-@media all and (min-width: 1200px){
+@media all and (min-width: $breakpoint-desktop){
     .footer {
         padding: 50px 320px 40px 320px; 
     }
