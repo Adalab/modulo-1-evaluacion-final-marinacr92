@@ -42,10 +42,13 @@
 }
 
 .copy {
-    padding: 0 12px;
     text-align: center;
     font-size: 1.4rem;
     line-height: 2.14;
+
+    &__text{
+        display: block;
+    }
 
     &__heart{
     color: $bright-orange;
@@ -77,11 +80,6 @@
         padding: 0;
         text-align: left;
         order: 1;
-    
-
-        &__text {
-            display: block;
-        }
     }
 }
 

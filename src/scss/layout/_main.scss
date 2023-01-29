@@ -20,6 +20,10 @@
         background-color: white;
         border: 2px solid $bright-orange;
         border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
 
         &-text{
             color: $bright-orange;
@@ -28,8 +32,46 @@
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
+
+            &:hover {
+                color: $white;
+            }
         }
     }
+}
+
+.orange__bubble {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: $bright-orange;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.main__white-button:hover .orange__bubble {
+    transform: translateY(0) scale(2);
+}
+
+.bubble1 {
+    --n: 1;
+}
+
+.bubble2 {
+    --n: 2;
+}
+
+.bubble3 {
+    --n: 3;
+}
+
+.bubble4 {
+    --n: 4;
 }
 
 .title__orange{
@@ -72,6 +114,9 @@
         background-color: $bright-orange;
         border: none;
         border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
         
         &-text {
             color: $white;
@@ -80,8 +125,30 @@
             font-size: 2rem;
             text-align: center;
             text-decoration: none;
+
+            &:hover {
+                color: $bright-orange;
+            }
         }
     }
+}
+
+.white__bubble {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: $white;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.main__grey-button:hover .white__bubble {
+    transform: translateY(0) scale(2);
 }
 
 .grey__ul{
