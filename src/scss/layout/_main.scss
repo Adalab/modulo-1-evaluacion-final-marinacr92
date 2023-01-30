@@ -2,7 +2,7 @@
     scroll-margin-top: 20px;
 }
 
-.title-font {
+.titles-font {
     font-family: $RobotoSlab;
 }
 
@@ -145,11 +145,7 @@
 
 
 @media all and (min-width: $breakpoint-tablet){
-    #grey{
-    scroll-margin-top: 40px;
-    }
-
-    .main__white{
+     .main__white{
         padding: 40px 40px 61px 40px;
     }
 
@@ -226,16 +222,8 @@
         }
     }
 
-    .grey__ul{
-        grid-column: span 3;
-        grid-row: span 1;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 150px;
-        padding: 0 0;
-
-        &__title{
-            padding-bottom: 26px;
-        }
+    .grey__ul__title{
+        padding-bottom: 26px; 
     }
 }
 
