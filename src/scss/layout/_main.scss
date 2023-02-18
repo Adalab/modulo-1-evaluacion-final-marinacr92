@@ -14,10 +14,16 @@
 .main__white{
     padding: 34px 15px 40px 15px;
 
-    &-button{
+        &-button{
         width: 160px;
         height: 45px;
         background-color: white;
+        color: $bright-orange;
+        font-family: $Roboto;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
         border: 2px solid $bright-orange;
         border-radius: 25px;
         position: relative;
@@ -25,16 +31,7 @@
         z-index: 1;
         transition: 0.5s;
 
-        &-text{
-            color: $bright-orange;
-            font-family: $Roboto;
-            font-weight: 500;
-            font-size: 2rem;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        &:hover &-text {
+        &:hover{
             color: $white;
         }
     }
@@ -97,26 +94,23 @@
         text-align: center;
     }
 
-    &-button{
+        &-button{
         width: 184px;
         height: 45px;
+        color: $white;
+        font-family: $Roboto;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
         background-color: $bright-orange;
         border: none;
         border-radius: 25px;
         position: relative;
         overflow: hidden;
         z-index: 1;
-        
-        &-text {
-            color: $white;
-            font-family: $Roboto;
-            font-weight: 500;
-            font-size: 2rem;
-            text-align: center;
-            text-decoration: none;
-        }
 
-        &:hover &-text{
+        &:hover{
             color: $bright-orange;
         }
     }
