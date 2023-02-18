@@ -33,14 +33,13 @@
         width: 36px;
         height: 36px;
         background-color: $white;
-        border-radius: 50px;
+        border-radius: 50%;
         border: 2px solid $white;
         text-align: center;
-        padding: 12px 0;
-        position: relative;
 
         &-img {
           width: 18px;
+          padding: 12px 0;
         }
 
         &:hover {
